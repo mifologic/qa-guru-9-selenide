@@ -21,7 +21,6 @@ public class SelenideDocumentationsTest {
         $("#wiki-pages-filter").setValue("SoftAssertions");
         $("[data-filterable-for=wiki-pages-filter]")
                 .find(byText("SoftAssertions"))
-                .shouldBe(Condition.visible)
                 .click();
         $(".markdown-body")
                 .find(byText("3. Using JUnit5 extend test class:"))
